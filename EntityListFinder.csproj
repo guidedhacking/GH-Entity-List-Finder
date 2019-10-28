@@ -207,6 +207,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="gh_logo.ico" />
+    <None Include="readme.md" />
     <None Include="Resources\gh_logo.png" />
     <None Include="Resources\gh_about.png" />
     <None Include="Resources\gh_logo.bmp" />
