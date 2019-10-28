@@ -14,7 +14,7 @@ Assault Cube, Sauerbraten x64, CSGO, Black Mesa, DOOM 2016, Bioshock Infinite
 These include Source Engine, IdTech Engine & Unreal Engine
 
 ## How to use
-**1.** Download the tool from [here](https://guidedhacking.com/).
+**1.** Download the tool from the official location [here](https://guidedhacking.com/resources/gh-entity-list-finder.36/).
 
 **2.** Open the tool and select your game process.
 
@@ -70,3 +70,6 @@ This doesn't always mean that the address was bad, but if still there is results
 4 bytes less before the one we found (in AssaultCube), but that is something that the tool doesn't know, is up to you to work from here.
 
   ![Step7](https://i.imgur.com/BSmrN9c.png)
+
+## Contributors
+95% KISKE, 5% Boboo99 & Rake
