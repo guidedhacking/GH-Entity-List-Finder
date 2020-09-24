@@ -1,10 +1,12 @@
-﻿using Squalr.Engine.DataTypes;
+using Squalr.Engine.DataTypes;
 using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Runtime.ExceptionServices;
+using System.ServiceProcess;
 using System.Windows.Forms;
 
 namespace EntityListFinder
@@ -57,6 +59,21 @@ namespace EntityListFinder
             processesList.Items.Clear();
 
             Process[] allApplications = Process.GetProcesses().Where(process => process.MainWindowHandle != IntPtr.Zero).ToArray();
+            ServiceController[] services = ServiceController.GetServices();
+            foreach(var s in services)
+            {
+                try
+                {
+                    
+                    Process p = Process.GetProcessesByName(s.ServiceName)[0];
+                    allApplications.Append(p);
+                }
+                catch
+                {
+                    /* if you have access denied or the process is an actual service */
+                }
+            }
+
 
             for (int i = 0; i < allApplications.Length; ++i)
             {
