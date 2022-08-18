@@ -65,8 +65,8 @@ namespace EntityListFinder
                 try
                 {
                     
-                    Process p = Process.GetProcessesByName(s.ServiceName)[0];
-                    allApplications.Append(p);
+                    if( Process.GetProcessesByName(s.ServiceName) is { } processes && processes.Length>0)
+                        allApplications.Append(processes[0]);
                 }
                 catch
                 {
