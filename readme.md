@@ -123,3 +123,13 @@ A: Squalr is a memory editing library that allows you to read and write memory. 
 
 ## Contributors
 95% KISKE, 5% Boboo99 & Rake
+
+EntityList Articles
+-------------------
+
+-   [EntityList Address Tutorial](https://guidedhacking.com/threads/how-to-find-the-entitylist-address-tutorial.10235/)
+-   [Call of Duty WW2 Entity](https://guidedhacking.com/threads/call-of-duty-ww2-entity-list.20337/)
+-   [Wolfenstein Hack Tutorial](https://guidedhacking.com/threads/how-to-find-entity-list-wolfenstein-hack-tutorial.14280/)
+-   [CSGO Entity List Finding](https://guidedhacking.com/threads/reverse-engineering-how-to-find-the-csgo-entity-list.13313/)
+-   [Loop Through EntityList Example](https://guidedhacking.com/threads/loop-through-entitylist-internally-with-reclass-poc-example.10953/)
+-   [Loop Through Entity List Internally](https://guidedhacking.com/threads/how-to-loop-through-entity-list-internally.9892/)
