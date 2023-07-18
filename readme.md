@@ -1,15 +1,43 @@
-# Entity List Finder
-Tool that will help you to find the entity list.
+GH Entity List Finder
+=====================
 
-## Requirements
-[.NET Framework 4.6.1 Runtime](https://dotnet.microsoft.com/download/dotnet-framework/net461) or higher.
+Welcome to the GH Entity List Finder repository. This tool is designed to help you find the entity list in various games, making it a valuable asset for game reverse engineers and hackers. It's a powerful tool that can be used to dissect and understand the underlying structure of a game's memory, and it's particularly useful when you're trying to understand how games manage their entities.
 
-## Support
-x64 and x86 games.
+Features
+--------
 
-Tested working on
+-   Support for Multiple Games and Engines: This tool has been tested and confirmed to work on games like Assault Cube, Sauerbraten x64, CSGO, Black Mesa, DOOM 2016, and Bioshock Infinite. It supports a variety of game engines, including Source Engine, IdTech Engine, and Unreal Engine.
 
-Assault Cube, Sauerbraten x64, CSGO, Black Mesa, DOOM 2016, Bioshock Infinite
+-   Flexible Search Parameters: The tool allows you to adjust the "Max bytes between addresses" option, which lets you control the distance between each entity that you're trying to find. This flexibility allows you to fine-tune your search and get the most accurate results.
+
+-   Validation Feature: After the initial search, you can modify your settings and press the "Validate" button to filter out any bad results. This feature helps you narrow down your search and find the most likely entity list addresses.
+
+-   User-Friendly Interface: The tool comes with a simple and intuitive interface, making it easy for you to input your parameters and view the results.
+
+Requirements
+------------
+
+To use this tool, you'll need the [.NET Framework 4.6.1 Runtime](https://dotnet.microsoft.com/download/dotnet-framework/net461) or higher. The tool supports both x64 and x86 games.
+
+Usage
+-----
+
+The usage of this tool is straightforward. You start by downloading the tool from the official location [here](https://guidedhacking.com/resources/gh-entity-list-finder.36/). After opening the tool, you select your game process and input your search parameters. The tool then performs a search and displays the possible entity list addresses on the right panel. You can then modify your settings and press the "Validate" button to filter out any bad results.
+
+Code Structure
+--------------
+
+The codebase is organized into several key files:
+
+-   `EntityListFinder.cs`: This is the main file where the logic for finding the entity list is implemented.
+
+-   `MainForm.cs`: This file contains the code for the main form of the application, where you input your parameters and view the results.
+
+-   `AboutPopup.cs`: This file contains the code for the About popup window.
+
+-   `ControlState.cs` and `NativeMethods.cs`: These files contain utility methods used by the application.
+
+-   `Squalr` directory: This directory contains DLL files for the Squalr memory editing library, which the tool uses to read and write memory.
 
 These include Source Engine, IdTech Engine & Unreal Engine
 
@@ -70,6 +98,26 @@ This doesn't always mean that the address was bad, but if still there is results
 4 bytes less before the one we found (in AssaultCube), but that is something that the tool doesn't know, is up to you to work from here.
 
   ![Step7](https://i.imgur.com/BSmrN9c.png)
+
+  
+FAQ
+---
+
+Q: What is an entity list?
+
+A: In game development, an entity list is a data structure that holds all the entities in a game. Entities can be anything from players, enemies, items, to interactive objects. By finding the entity list, you can manipulate these entities to change the game's behavior.
+
+Q: What is the "Max bytes between addresses" option?
+
+A: This option allows you to control the distance between each entity that you're trying to find. A bigger number will give you more results but mostly useless, while a lower number will give you less results but more accurate.
+
+Q: What is the "Validate" button for?
+
+A: The "Validate" button allows you to filter out any bad results after the initial search. This helps you narrow down your search and find the most likely entity list addresses.
+
+Q: What is the Squalr library?
+
+A: Squalr is a memory editing library that allows you to read and write memory. This tool uses the Squalr library to perform its memory operations.
 
 ## Contributors
 95% KISKE, 5% Boboo99 & Rake
