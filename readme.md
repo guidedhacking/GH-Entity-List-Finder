@@ -133,3 +133,5 @@ EntityList Articles
 -   [CSGO Entity List Finding](https://guidedhacking.com/threads/reverse-engineering-how-to-find-the-csgo-entity-list.13313/)
 -   [Loop Through EntityList Example](https://guidedhacking.com/threads/loop-through-entitylist-internally-with-reclass-poc-example.10953/)
 -   [Loop Through Entity List Internally](https://guidedhacking.com/threads/how-to-loop-through-entity-list-internally.9892/)
+
+  GuidedHacking® - The Game Hacking Bible® - © 2025 Guided Hacking LLC. All Rights Reserved.
