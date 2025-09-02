@@ -3,7 +3,7 @@ GH Entity List Finder
 
 Welcome to the GH Entity List Finder repository. This tool is designed to help you find the entity list in various games, making it a valuable asset for game reverse engineers and hackers. It's a powerful tool that can be used to dissect and understand the underlying structure of a game's memory, and it's particularly useful when you're trying to understand how games manage their entities.
 
-<img width="499" height="478" alt="image" src="https://github.com/user-attachments/assets/8a530982-9620-4b1a-a2dc-c0ff3d78cefc" />
+<center><img width="499" height="478" alt="image" src="https://github.com/user-attachments/assets/8a530982-9620-4b1a-a2dc-c0ff3d78cefc" /></center>
 
 Features
 --------
